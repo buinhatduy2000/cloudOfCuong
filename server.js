@@ -18,8 +18,6 @@ mongoose.connect('mongodb+srv://cuongvo862:123@cluster0.qkni3.mongodb.net/Bearbr
     useCreateIndex: true
 });
 
-const PORT = process.env.PORT || 666;
-
 app.use(express.static(path.join(__dirname,'public')));
 
 //set template engine
