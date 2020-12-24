@@ -37,4 +37,4 @@ app.get('/', async (request, response) => {
 app.use('/blogs', blogRouter);
 
 //listen PORT
-app.listen(PORT);
+app.listen(process.env.PORT || 2);
